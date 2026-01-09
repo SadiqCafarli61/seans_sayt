@@ -1,0 +1,178 @@
+.momentum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+.momentum .moment_word {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.momentum__gmail {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.momentum__gmail h5 {
+  color: #FF64BC;
+  font-size: 28px;
+  word-spacing: 2px;
+}
+
+.momentum__gmail strong {
+  color: #464C4C;
+  width: 100% !important;
+}
+
+.momentum__gmail .gmail__starting {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.momentum__gmail form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.momentum__gmail form button {
+  background-color: #FF64BA;
+  width: 400px;
+  height: 47px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+.momentum__gmail form :where(input) {
+  width: 400px;
+  height: 47px;
+  padding-left: 10px;
+  border: 1px solid #fff;
+  outline: none;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.momentum__gmail label {
+  font-size: 14px;
+  color: #BCBCBC;
+}
+
+.momentum__gmail button:hover {
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+@media (max-width: 1280px) {
+  .momentum {
+    height: 100%;
+  }
+  .moment_word h4 {
+    font-size: 30px;
+  }
+  .momentum__gmail strong {
+    max-width: 800px !important;
+    display: flex;
+  }
+  .momentum__gmail .dot {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .momentum__gmail .gmail__starting {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .momentum__gmail form :where(button, input) {
+    width: 300px !important;
+  }
+  .momentum__gmail .labelInput {
+    max-width: 420px !important;
+  }
+  .momentum__gmail .labelInput p {
+    margin-left: -32px !important;
+  }
+
+  .momentum__gmail .formStart {
+    width: 450px;
+    margin: 0px;
+  }
+
+  .momentum__gmail .formStart form {
+    width: 300px !important;
+  }
+  .momentum__gmail form :where(input, button) {
+    width: 240px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .momentum__gmail form {
+    width: 100%;
+    padding: 15px;
+  }
+  .momentum__gmail form :where(button, input) {
+    width: 100%;
+  }
+
+  .momentum__gmail h5 {
+    font-size: 24px;
+  }
+
+  .momentum__gmail h2 {
+    font-size: 14px;
+  }
+
+  .momentum__gmail .dot {
+    font-size: 12px;
+  }
+
+  .momentum__gmail label {
+    font-size: 12px;
+  }
+  .momentum__gmail .labelInput p{
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .momentum__gmail form :where(button, input) {
+    width: 90%;
+  }
+
+  .momentum__gmail h5 {
+    font-size: 22px;
+  }
+
+  .momentum__gmail h2 {
+    font-size: 12px;
+  }
+  .momentum__gmail form :where(input,button){
+    width: 200px !important;
+  }
+  .momentum__gmail .formStart{
+    width: 300px !important;
+  }
+}
