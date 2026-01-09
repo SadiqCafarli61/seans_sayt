@@ -505,6 +505,10 @@ font-weight: normal;
   .home h1{
     font-size: 18px !important;
   }
+  .video__button{
+    width: auto;
+    text-align: center;
+  }
   .home p{
     font-size: 17px !important;
     max-width: 400px !important;
@@ -524,7 +528,7 @@ padding-top: 15px !important;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: auto;
+    height: 100%;
   }
   .who .main .left{
     padding-left: 20px;
@@ -533,6 +537,10 @@ padding-top: 15px !important;
   .who .main{
      height: 1200px !important;
   }
+  .logo__container{
+    height: 90vh !important;
+  }
+
 
   .logo__container h2{
     font-size: 32px !important;
@@ -563,6 +571,7 @@ padding-top: 15px !important;
  .footer .right :where(input,select,button){
   width: 300px !important;
  }
+ 
   
 }
 
@@ -590,7 +599,7 @@ padding-top: 15px !important;
     padding-right: 15px;
     
   }
-  
+ 
 
   .who .main .centerr img {
     width: 180px !important;
