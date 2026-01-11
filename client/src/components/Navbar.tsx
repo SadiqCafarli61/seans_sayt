@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBarsStaggered } from "react-icons/fa6";
+import logo from '../assets/logo.avif'
 const Navbar:React.FC = () => {
     
 
@@ -54,6 +55,10 @@ const Navbar:React.FC = () => {
             ))
           }
 </div>
+<div className='overlay__login'>
+  <i className="fa-solid fa-user"></i>
+<span>Giriş</span>
+</div>
   </div>
     )
   }
@@ -61,7 +66,10 @@ const Navbar:React.FC = () => {
      <div className="header__navbar">
          <div className="header">
             <div className="left">
-<h3>Salam</h3>
+<img src={logo} style={{
+  width:"70px",
+  height:"70px"
+}} alt="" />
          </div>
           <div className="bars">
             <FaBarsStaggered style={{

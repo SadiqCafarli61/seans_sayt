@@ -59,16 +59,17 @@ const ElektronPoct: React.FC = () => {
     <div className='momentum__gmail'>
       <div className='gmail__starting'>
         <h5>7 gün boyunca her gün benden e-posta yoluyla qoçluq al.</h5>
-        <p style={{ paddingTop: "8px" }}>Bu mini koçlukta:</p>
+        <p style={{ paddingTop: "8px" }}>🌿 “Mental Emalatxana” nə verir:</p>
         <div style={{ marginTop: "16px" }}>
-          <div className='dot' style={{ marginBottom: "10px" }}>⭕ <strong>Gününü niyyətlə yönləndirmək üçün günlük bir plan və tövsiyələr alacaqsan.</strong></div>
-          <div className='dot' style={{ marginBottom: "10px" }}>⭕ <strong>Baxış açını dəyişdirəcək yeni perspektivlər əldə edəcəksən.</strong></div>
-          <div className='dot' style={{ marginBottom: "10px" }}>⭕ <strong>Sadə və asan praktikalarla tətbiq etməyə başlayacaqsan.</strong></div>
-          <div className='dot' style={{ marginBottom: "10px" }}>⭕ <strong>Mürəkkəb metodları kənara qoyaraq etibarlı bir planla zehnini sıfırlayacaqsan.</strong></div>
+          <div className='dot' style={{ marginBottom: "10px" }}>⭕ <strong>Sən öz daxili emalatxananın içinə girirsən.</strong></div>
+          <div className='dot' style={{ marginBottom: "10px" }}>⭕ <strong>Hansı layihələrin, rolların, arzuların həqiqətən canlı, hansılarının isə ölü, amma vərdişdən daşındığını görürsən.</strong></div>
+          <div className='dot' style={{ marginBottom: "10px" }}>⭕ <strong>Yeni bir daxili xəritə qurursan: bundan sonra nəyi və niyə inşa edirsən.</strong></div>
+          <div className='dot' style={{ marginBottom: "10px" }}>⭕ <strong>Beyin gələcək qarşısında panikanı dayandırır — istiqamət və dayaq hissi yaranır.</strong></div>
           <div className='dot' style={{ marginBottom: "10px" }}>⭕ <strong>Daxili təhlillər apararaq özünü kəşf edəcəksən.</strong></div>
           <div className='dot' style={{ marginBottom: "10px" }}>⭕ <strong>Plana sadiq qalarsan, 7 gün ərzində mental və fiziki sağlamlığındakı dəyişiklikləri fərq edəcəksən.</strong></div>
           <div className='dot' style={{ marginBottom: "10px" }}>⭕ <strong>7 günün sonunda qazandığın bu Momentumu, daha çox yaxşılıq halı yaratmaq və hədəflərini həyata keçirmək üçün istifadə edə biləcəksən.</strong></div>
         </div>
+        
         <div style={{ paddingTop: "25px" }}>
           <h5>Aşağıda qeydiyyatdan keçin.</h5>
           <h2 style={{
@@ -79,6 +80,7 @@ const ElektronPoct: React.FC = () => {
             fontWeight: "normal"
           }}>göndəriləcək. Təsdiqdən sonra kouçinqinizə başlamağa hazır olacaqsınız!</span></h2>
         </div>
+
         <div className='formStart' style={{
           backgroundColor: "#000",
           width: "600px",
@@ -153,6 +155,18 @@ const ElektronPoct: React.FC = () => {
               <button type="submit">Abunə Olun</button>
             </div>
           </form>
+        </div>
+
+        {/* Dobi seansı mesajları */}
+        <div className='dob-seans-info'>
+          <h5>Daxili Sabotajçı ilə üzləş:</h5>
+          <p>
+            İçindəki kiçik sabotajçı, heç bir səbəb olmadan planlarını pozur. Son anda özünü məhv edən qərarlar verir və sonra buna görə utanır. 
+            Artıq onunla üzləş və daxili azadlığını kəşf et! Hər şeyi dəyişdirmək, sadəcə addım-addım özünü yenidən tanımaqla mümkündür.
+          </p>
+          <p>
+            İndi daxili sabotajçıya qarşı mübarizə aparmaq zamanı gəldi! Özünü məhv etməyi dayandır və irəliləyişini gör!
+          </p>
         </div>
       </div>
     </div>

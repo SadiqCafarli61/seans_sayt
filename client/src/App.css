@@ -64,7 +64,7 @@ transition: color 0.4s ease-in-out;
   color: #FFD1EA;
 }
 .overlay{
-  background: linear-gradient(rgba(0,0,0,.4)),rgba(0,0,0,.4) url('./assets/navbarBg.jpg');
+  background: rgba(0,0,0,.9);
   position: fixed;
   width: 100%;
   top: 0;
@@ -73,13 +73,27 @@ transition: color 0.4s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
    height: 0px; 
   overflow: hidden;
   opacity: 0; 
   visibility: hidden;
   transition: height 0.5s ease-out, opacity 0.5s ease-out
 }
-
+.overlay .overlay__login{
+  margin-top: 25px;
+}
+.overlay__login i,span{
+  color: #fff;
+  cursor: pointer;
+}
+.overlay__login span{
+  padding-left: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.overlay__login span:hover{
+  text-decoration: underline;
+}
 .overlay.open {
   height: 100vh; 
   visibility: visible;
@@ -434,6 +448,10 @@ padding: 15px;
   border: none;
 font-size: 16px;
 font-weight: normal;
+}
+
+.footer form select option{
+  color:  #555 !important;
 }
 .props{
   background-color: #FF64BA;
