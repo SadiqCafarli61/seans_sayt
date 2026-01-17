@@ -13,7 +13,7 @@ const Home: React.FC = () => {
   return (
     <div className="home">
       <div className="content" data-aos="fade-down">
-        <h5 className="short-title">Hazır Ol!</h5> {/* Qısa və təsirli başlıq */}
+        <h5 className="short-title">Fokuslan!</h5> {/* Qısa və təsirli başlıq */}
         <svg
           preserveAspectRatio="xMidYMid meet"
           data-bbox="8.374 96.1 183.052 7.9"

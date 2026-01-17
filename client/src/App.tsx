@@ -7,6 +7,8 @@ import Main from './components/Main'
 import Footer from './components/Footer'
 import Program from './pages/Programs/Program'
 import Momentum from './pages/Momentum/Momentum'
+import Profile from './pages/Profile/Profile'
+import EditProfileForm from './pages/Profile/EditProfileForm'
 
 const App:React.FC = () => {
 
@@ -19,6 +21,8 @@ const App:React.FC = () => {
       <Route path='/' element={<Main />} />
       <Route path='/products' element={<Program />} />
       <Route path='/momentum' element={<Momentum />} />
+      <Route path='/profile' element={<Profile />} />
+      <Route path='/edit-profile' element={<EditProfileForm />} />
       </Routes>
       <Footer />
       </BrowserRouter>

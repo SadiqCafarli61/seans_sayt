@@ -29,6 +29,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 5px;
+    padding-right: 48px;
 }
 .header__navbar .right i{
     color: #aaa;
@@ -80,6 +81,144 @@ transition: color 0.4s ease-in-out;
   visibility: hidden;
   transition: height 0.5s ease-out, opacity 0.5s ease-out
 }
+
+/* profile bar */
+
+
+.profile__bar{
+  display: flex;
+  align-items: center;
+}
+.profile__bar .dropdown{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.6s,  ease-in-out;
+  max-width: 200px;
+  background-color: #000;
+  position: fixed;
+  z-index:2 ;
+  display: flex;
+  top:8%;
+  right: 3%;
+  flex-direction: column;
+  padding: 8px;
+}
+.profile__bar .dropdown a{
+  margin-top: 12px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  transition:  all 0.4s ease-in-out;
+}
+.profile__bar:hover .dropdown{
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events:  auto;
+}
+.profile__bar .dropdown a:hover{
+  color: #FF64BA;
+}
+/* login overlay */
+
+.login__menu{
+    background: rgba(0,0,0,.9);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 30;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+height: 100vh;
+  transition: height 0.5s ease-out, opacity 0.5s ease-out
+}
+.login__menu button{
+  border: 0;
+  outline: none;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  background-color: transparent;
+}
+.login__menu .new{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ margin-top: 10px;
+}
+.login__menu .form{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login__menu .new h2{
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+}
+.login__menu .new span{
+  padding-left: 4px;
+  color: #515057;
+  cursor: pointer;
+}
+.login__menu form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login__menu .loginButton{
+cursor: pointer;
+width: 300px;
+height: 47px;
+display: flex;
+align-items: center;
+border-radius: 2px;
+background-color: #fff;
+border: none;
+outline: none;
+padding-left: 14px;
+}
+.login__menu .loginButton span{
+  color: #666;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+
+}
+.login__menu .e-poct{
+  margin-top: 25px;
+}
+.login__menu .epost__btn{
+  width: 320px;
+  height: 47px;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden !important;
+  font-weight: 600;
+  border: 1px solid #696969;
+  transition: border-color 0.4s ease-in-out;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login__menu .epost__btn:hover{
+  border: 1px solid #fff;
+}
+
+/* end of login menu */
 .overlay .overlay__login{
   margin-top: 25px;
 }
