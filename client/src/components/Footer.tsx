@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import { init, send } from '@emailjs/browser';
 
 const Footer: React.FC = () => {
   // Form verileri ve hata durumları
@@ -56,17 +56,18 @@ const Footer: React.FC = () => {
     return isValid;
   };
 
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+    // EmailJS için gerekli başlatma
+    init('kRYGwQKTnHgVmt4k0'); // Burada sizin EmailJS istifadəçi ID-nizi daxil etməlisiniz
+
     if (validateForm()) {
-     
-      emailjs.send(
-        'service_b6dy90e',   
-        'template_tfz25jg',   
-        form,                 
-        'kRYGwQKTnHgVmt4k0'   
+      // Form verilerini email göndərmə üçün EmailJS ilə göndərir
+      send(
+        'service_b6dy90e',   // EmailJS xidmət ID
+        'template_tfz25jg',   // Şablon ID
+        form                  // Form verisi
       )
       .then(
         (response) => {
